@@ -1,0 +1,382 @@
+main .candle, main .wavy, main .main .grinder, main .main .ceramic, main .main .jewlry {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; }
+
+/*css pagina*/
+/*aplico reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  /*contenido principal, etiqueta main*/ }
+  body header {
+    border: 2px solid #a7a4a4; }
+    body header nav div .img-fluid {
+      width: 370px;
+      height: 140px;
+      margin-bottom: 1.5rem; }
+    body header nav div .nav-item {
+      font-size: 20px;
+      padding: 10px; }
+    body header nav div .navbar-nav {
+      margin-left: 30px;
+      margin-top: 100px;
+      padding: 20px; }
+  body main div .img__principal {
+    display: block;
+    border: 3px solid #a7a4a4;
+    margin: 0 auto; }
+  body main div .tituloCentrico {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.897);
+    text-decoration: overline;
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-top: 150px; }
+  body main div .parrafo {
+    width: 60%;
+    text-align: justify;
+    margin-left: 20%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.897);
+    text-transform: none;
+    font-weight: 20px; }
+  body main .cards {
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-items: center; }
+    body main .cards .cards__titulo {
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      color: rgba(0, 0, 0, 0.897);
+      text-align: center;
+      text-transform: capitalize;
+      text-decoration: overline;
+      margin-top: 15px; }
+    body main .cards .cards__parrafo {
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.897);
+      text-align: justify;
+      margin: 20px;
+      padding: 10px;
+      width: 90%; }
+    body main .cards .cards__img {
+      display: block;
+      margin: auto;
+      padding: 0px;
+      height: 400px;
+      width: 400px;
+      border: 5px solid #a7a4a4; }
+
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #a7a4a4;
+  background-image: linear-gradient(to top, rgba(153, 149, 149, 0.671), #f1f0f0);
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-align: right;
+  margin-top: 5%; }
+
+.footer__img {
+  height: 90px;
+  width: 250px; }
+
+.footer-bootstrap {
+  width: 100%; }
+
+/*self projects*/
+body .container .row .card-self {
+  margin: 1rem;
+  padding: 1rem;
+  margin-bottom: 30%; }
+
+body .container .row .card-img-top {
+  height: 300px; }
+
+.footer-bootstrap {
+  width: 100%; }
+
+/*boton back en wavy - candle - interior pots*/
+.back-self {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  border: 2px solid #a7a4a4;
+  border-radius: 10px;
+  background-color: #a7a4a4;
+  text-decoration: none;
+  margin: 50%;
+  padding: 1%; }
+
+/*contenido principal pagina candle*/
+main .candle .candle__img {
+  margin-top: 30;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-content: center; }
+  main .candle .candle__img img {
+    height: 400px;
+    width: 400px;
+    border: 5px solid #a7a4a4;
+    border-style: double; }
+
+main .candle .candle__title {
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.897);
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: overline; }
+
+main .candle .candle__p {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 5%;
+  width: 90%;
+  font-size: 27px;
+  color: rgba(0, 0, 0, 0.897);
+  text-align: justify;
+  margin-top: 15px; }
+
+/*pagina wavy e interior*/
+main .wavy .wavy__img {
+  margin-top: 30;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-content: center; }
+  main .wavy .wavy__img img {
+    height: 400px;
+    width: 400px;
+    border: 5px solid #a7a4a4;
+    border-style: double; }
+
+main .wavy .wavy__title {
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.897);
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: overline; }
+
+main .wavy .wavy__list {
+  font-family: 'Poppins', sans-serif;
+  font-size: 27px;
+  color: rgba(0, 0, 0, 0.897);
+  text-align: justify;
+  margin-left: 5%;
+  margin-top: 20px; }
+
+main .wavy .wavy__p {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 5%;
+  width: 90%;
+  font-size: 27px;
+  color: rgba(0, 0, 0, 0.897);
+  text-align: justify;
+  margin-top: 15px; }
+
+/*pagina collaborative projects*/
+main .main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr; }
+  main .main .grinder__img {
+    margin-top: 30;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-content: center; }
+    main .main .grinder__img img {
+      height: 400px;
+      width: 400px;
+      border: 5px solid #a7a4a4;
+      border-style: double; }
+  main .main .grinder__title {
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.897);
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: overline; }
+  main .main .grinder__list {
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.897);
+    text-align: justify;
+    margin-left: 5%;
+    margin-top: 20px; }
+  main .main .grinder__p {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5%;
+    width: 90%;
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.897);
+    text-align: justify;
+    margin-top: 15px; }
+  main .main .ceramic__img {
+    margin-top: 30;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-content: center; }
+    main .main .ceramic__img img {
+      height: 400px;
+      width: 400px;
+      border: 5px solid #a7a4a4;
+      border-style: double; }
+  main .main .ceramic__title {
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.897);
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: overline; }
+  main .main .ceramic__list {
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.897);
+    text-align: justify;
+    margin-left: 5%;
+    margin-top: 20px; }
+  main .main .ceramic__p {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5%;
+    width: 90%;
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.897);
+    text-align: justify;
+    margin-top: 15px; }
+  main .main .jewlry__img {
+    margin-top: 30;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-content: center; }
+    main .main .jewlry__img img {
+      height: 400px;
+      width: 400px;
+      border: 5px solid #a7a4a4;
+      border-style: double; }
+  main .main .jewlry__title {
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.897);
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: overline; }
+  main .main .jewlry__list {
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.897);
+    text-align: justify;
+    margin-left: 5%;
+    margin-top: 20px; }
+  main .main .jewlry__p {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5%;
+    width: 90%;
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.897);
+    text-align: justify;
+    margin-top: 15px; }
+
+/*about us*/
+main .about__img {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center; }
+  main .about__img img {
+    height: 400px;
+    width: 400px;
+    border: 5px solid #a7a4a4;
+    border-style: double; }
+
+main .principal {
+  display: grid;
+  grid-template-columns: 1000px;
+  grid-template-rows: 260px;
+  justify-content: center; }
+  main .principal .principal__titulo {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.897);
+    text-transform: uppercase;
+    text-decoration: overline;
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-top: 150px; }
+  main .principal .principal__p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.897);
+    text-align: center;
+    text-transform: none;
+    font-weight: 20px;
+    margin-bottom: 100px; }
+
+main .founder {
+  display: grid;
+  grid-template-columns: 1000px;
+  grid-template-rows: 1fr;
+  justify-content: center; }
+  main .founder .contenedor__founder {
+    display: flex;
+    justify-content: center; }
+  main .founder .founder__img {
+    height: 400px;
+    width: 400px;
+    border: 5px solid #a7a4a4; }
+  main .founder .founder__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.897);
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: overline;
+    margin-top: 30px; }
+  main .founder .founder__p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.897);
+    text-align: center;
+    text-transform: none;
+    font-weight: 20px;
+    margin-top: 40px; }
+
+/*HTML contact us*/
+.contact {
+  font-family: 'Ibarra Real Nova', serif;
+  font-weight: bold;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.897);
+  text-align: center; }
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr; }
