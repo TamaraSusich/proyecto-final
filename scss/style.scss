@@ -10,6 +10,7 @@
     box-sizing: border-box;
 }
 body{
+
     header{
         border: 2px solid nth($colores, 1 );
         nav{
@@ -96,17 +97,6 @@ body{
     }
 }
 /*footer*/
-.footer{
-    display: flex;
-    justify-content: space-between;
-    border:  2px solid  nth($colores, 1 );
-    background-image: linear-gradient( to top, rgba(153, 149, 149, 0.671),  rgb(241, 240, 240));
-    text-align: left;
-    font-family:'Poppins', sans-serif;
-    font-size: 16px;
-    text-align: right;
-    margin-top: 5%;
-}
 .footer__img{
     height: 90px;
     width: 250px;
@@ -116,6 +106,9 @@ body{
 }
 /*self projects*/
 body{
+    .title-self{
+        margin: 10px;
+    }
     .container{
         .row{
             .card-self{
@@ -129,10 +122,22 @@ body{
             
         }
     }
+    section{
+        div{
+            .img__holder2{
+                width: 100%;
+                height: 100%;
+                border: 2px solid rgb(114, 112, 112);
+            }
+        }
+
+    }
 }
 .footer-bootstrap{
     width: 100%;
+    
 }
+
 /*boton back en wavy - candle - interior pots*/
 .back-self{
     font-size: 20px;
@@ -341,125 +346,164 @@ main{
 }
 /*media queries*/
 /*Media queries en tablets*/
-@media screen and (max-width: 600px) {
-    .menu{
-        padding: 30px;
+@media screen and (max-width: 600px){
+    body{
+        main{
+            div{
+                .img__principal{
+                    display: none;
+                }
+            }
+            .cards{
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+            }
+            
+        }
+        .footer{
+            font-family: sans-serif;
+            font-size: 15px;
+            line-height: 20px;
+            text-align: right;
+            padding: 3px;
+        }
     }
-    header nav ul li{
-        display: inline-flex;
-        margin: auto;
-        border: 1px solid  rgb(80, 80, 80);
-        border-radius: 25px;
-        font-weight: bold;
-        background-color:  rgb(170, 168, 168);
-      
-    }
-    .img__principal{
-        display: none;
-    }
-    .cards{
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-    }
-    .footer{
-        font-family: sans-serif;
-        font-size: 15px;
-        line-height: 20px;
-        text-align: right;
-       padding: 3px;
-    }
-
 }
-/*mobile*/
-
+/*media queries en mobile*/
 @media screen and (max-width: 500px) {
-    .body-collaborative{
-        display: flex;
-    }
-    /*seccion index*/
-    .menu{
-        display: grid;
-    }
-    .navbar-nav{
-        transition: none;
-    }
- 
-    header nav ul li{
-        display: inline-flex;
-        margin: auto;
-        border: 1px solid  rgb(80, 80, 80);
-        border-radius: 25px;
-        font-weight: bold;
-        background-color:  rgb(170, 168, 168);}
-    .img__principal{
-        display: none;
-    }
-    .cards{
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-    }
-    .footer{
-        display: none;
+    body{
+        div{
+            .img__principal{
+                display: none;
+            }
+        }
+        .cards{
+            margin-top: 50px;
+            display: flex;
+           flex-direction: column;}
     }
 
- /*seccion self projects*/
- .img__c_uno{
-    display: none;
- }
- .img__w_dos{
-    display: none;
- }
- .card-self{
-    width: 1%;
-    margin: 2px;
-    padding: 2px;
-    margin-left: 0%;
-}
- /*seccion collaborative-projects*/
- .img__ce_uno{
-    display: none;
- }
- .img__g_dos{
-    display: none;
- }
- .img__je_uno{
-    display: none;
- }
- 
-.main{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
-}
- /*pagina about us*/
-.about__img{
-    display: none;
-}
-.founder{
-    display:grid;
-    grid-template-columns: 400px;
-    grid-template-rows: 1fr;
-    justify-content: center;
+ /*self projects*/
+    body{
+        div{
+            .img__c_uno{
+             display: none;
+            }
+        } 
+    }
+    body{
+      div{
+         .img__w_dos{
+              display: none;
+            }
+        }
+    }
+
+ /*collaborative projects*/
+    body{
+        main{
+            .ceramic {
+                .ceramic__list{
+                 font-size: 20px;
+                 text-align: left;
+                }
+                .ceramic__p{
+                 font-size: 20px;
+                 margin:0;
+                 width: 0 auto;
+                }
+                .ceramic__img{
+                 justify-content: center;
+                    .img__ce_uno{
+                        display: none;
+                     }
+                    .img__ce_dos{
+                     height: 300px;
+                     width: 300px;
+                    }
+                }
+           
+            }
+            .grinder{
+                .grinder__list{
+                 font-size: 20px;
+                 text-align: left;
+                }
+                 .grinder__p{
+                 font-size: 20px;
+                 margin:0;
+                 width: 0 auto;
+                 }
+                .grinder__img{
+                 justify-content: center;
+                    .img__g_dos{
+                     display: none;
+                    }
+                    .img__g_uno{
+                     height: 300px;
+                     width: 300px;
+                    }
+                 }
+         
+            }
+         .jewlry{
+            .jewlry__list{
+                font-size: 20px;
+                text-align: left;
+            }
+            .jewlry__p{
+                font-size: 20px;
+                margin:0;
+                width: 0 auto;
+            }
+            .jewlry__img{
+                .img__je_uno{
+                    display: none;
+                }
+                .img__je_dos{
+                    height: 300px;
+                    width: 300px;
+                }  
+            }
+        }
+    }   
+
     
-}
-.principal__titulo{
-   font-size: 40px;
-   margin-bottom: 40px;
-   margin-top: 30px;}
 
-.founder__title{
-    font-family: sans-serif;
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.897);
-    text-align: center;
-    text-transform: capitalize;
-    text-decoration: overline;
-    margin-top: 10px;
-}
-
-/*seccion contact us*/
-.contact{
-    display: grid;
-    grid-template-columns: 400px;
+        
+ 
+ /*about us*/
+    body{ 
+        main {
+            .about__img{
+                .about__dos{
+                 display: none;
+                }
+               .about__tres{
+                 display: none;
+                }
+            }
+            .principal{
+                .principal__titulo{
+                 font-size: 40px;
+                 margin-bottom: 100px;
+                 margin-top: 10px;}
+                .principal__p{
+                 font-size: 25px;
+                 width: 0 auto;
+                 padding: 0;
+                 margin: 0;
+                }
+            }
+     
+            .founder{
+             display:grid;
+             grid-template-columns: 400px;
+             grid-template-rows: 1fr;
+             justify-content: center;
+            }
+     
+        }
+    }      
+}}
