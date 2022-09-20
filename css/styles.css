@@ -12,9 +12,9 @@ main .candle, main .wavy, main .main .grinder, main .main .ceramic, main .main .
   box-sizing: border-box; }
 
 body {
+  background-image: linear-gradient(#fffdfd, #b1b5b8);
   /*contenido principal, etiqueta main*/ }
   body header {
-    background-image: linear-gradient(#fffdfd, #b1b5b8);
     border: 2px solid #a7a4a4; }
     body header nav div .img-fluid {
       width: 370px;
@@ -30,7 +30,9 @@ body {
   body main div .img__principal {
     display: block;
     border: 3px solid #a7a4a4;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 80%;
+    height: 30%; }
   body main div .tituloCentrico {
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -67,10 +69,10 @@ body {
     body main .cards .cards__parrafo {
       font-family: 'Poppins', sans-serif;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 24px;
       color: rgba(0, 0, 0, 0.897);
       text-align: justify;
-      margin: 20px;
+      margin: 27px;
       padding: 10px;
       width: 90%; }
     body main .cards .cards__img {
@@ -85,9 +87,6 @@ body {
 .footer__img {
   height: 90px;
   width: 250px; }
-
-.footer-bootstrap {
-  width: 100%; }
 
 /*self projects*/
 body .title-self {
@@ -109,9 +108,6 @@ body section div .display-2 {
   margin-left: 20%;
   margin-bottom: 10%; }
 
-.footer-bootstrap {
-  width: 100%; }
-
 /*boton back en wavy - candle - interior pots*/
 .back-self {
   font-size: 20px;
@@ -121,8 +117,7 @@ body section div .display-2 {
   border-radius: 10px;
   background-color: #a7a4a4;
   text-decoration: none;
-  margin: 50%;
-  padding: 1%; }
+  margin: 50%; }
 
 /*contenido principal pagina candle*/
 main .candle .candle__img {
@@ -151,6 +146,7 @@ main .candle .candle__p {
   margin-left: 5%;
   width: 90%;
   font-size: 27px;
+  font-weight: bold;
   color: rgba(0, 0, 0, 0.897);
   text-align: justify;
   margin-top: 15px; }
@@ -181,6 +177,7 @@ main .wavy .wavy__list {
   font-family: 'Poppins', sans-serif;
   font-size: 27px;
   color: rgba(0, 0, 0, 0.897);
+  font-weight: bold;
   text-align: justify;
   margin-left: 5%;
   margin-top: 20px; }
@@ -190,6 +187,7 @@ main .wavy .wavy__p {
   margin-left: 5%;
   width: 90%;
   font-size: 27px;
+  font-weight: bold;
   color: rgba(0, 0, 0, 0.897);
   text-align: justify;
   margin-top: 15px; }
@@ -222,6 +220,7 @@ main .main {
     font-family: 'Poppins', sans-serif;
     font-size: 27px;
     color: rgba(0, 0, 0, 0.897);
+    font-weight: bold;
     text-align: justify;
     margin-left: 5%;
     margin-top: 20px; }
@@ -230,6 +229,7 @@ main .main {
     margin-left: 5%;
     width: 90%;
     font-size: 27px;
+    font-weight: bold;
     color: rgba(0, 0, 0, 0.897);
     text-align: justify;
     margin-top: 15px; }
@@ -256,6 +256,7 @@ main .main {
     font-family: 'Poppins', sans-serif;
     font-size: 27px;
     color: rgba(0, 0, 0, 0.897);
+    font-weight: bold;
     text-align: justify;
     margin-left: 5%;
     margin-top: 20px; }
@@ -264,6 +265,7 @@ main .main {
     margin-left: 5%;
     width: 90%;
     font-size: 27px;
+    font-weight: bold;
     color: rgba(0, 0, 0, 0.897);
     text-align: justify;
     margin-top: 15px; }
@@ -290,6 +292,7 @@ main .main {
     font-family: 'Poppins', sans-serif;
     font-size: 27px;
     color: rgba(0, 0, 0, 0.897);
+    font-weight: bold;
     text-align: justify;
     margin-left: 5%;
     margin-top: 20px; }
@@ -298,6 +301,7 @@ main .main {
     margin-left: 5%;
     width: 90%;
     font-size: 27px;
+    font-weight: bold;
     color: rgba(0, 0, 0, 0.897);
     text-align: justify;
     margin-top: 15px; }
@@ -308,7 +312,17 @@ main .about__img {
   display: flex;
   justify-content: space-evenly;
   align-content: center; }
-  main .about__img img {
+  main .about__img .about__uno {
+    height: 400px;
+    width: 400px;
+    border: 5px solid #a7a4a4;
+    border-style: double; }
+  main .about__img .about__dos {
+    height: 400px;
+    width: 400px;
+    border: 5px solid #a7a4a4;
+    border-style: double; }
+  main .about__img .about__tres {
     height: 400px;
     width: 400px;
     border: 5px solid #a7a4a4;
@@ -326,12 +340,13 @@ main .principal {
     color: rgba(0, 0, 0, 0.897);
     text-transform: uppercase;
     text-decoration: overline;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 40px;
     margin-top: 150px; }
   main .principal .principal__p {
     font-family: 'Poppins', sans-serif;
-    font-size: 27px;
+    font-size: 22px;
+    font-weight: bold;
     color: rgba(0, 0, 0, 0.897);
     text-align: center;
     text-transform: none;
@@ -361,12 +376,18 @@ main .founder {
     margin-top: 30px; }
   main .founder .founder__p {
     font-family: 'Poppins', sans-serif;
-    font-size: 27px;
+    font-size: 22px;
     color: rgba(0, 0, 0, 0.897);
+    font-weight: bold;
     text-align: center;
     text-transform: none;
     font-weight: 20px;
     margin-top: 40px; }
+
+/*parte de footer*/
+body .footer__contact {
+  height: auto;
+  margin-top: 20%; }
 
 /*HTML contact us*/
 .contact {
@@ -383,26 +404,18 @@ main .founder {
   grid-template-rows: 0.5fr 1fr; }
 
 /*media queries*/
-/*Media queries en tablets*/
-@media screen and (max-width: 600px) {
+/*media queries en mobile*/
+@media screen and (max-width: 599px) {
+  body header nav div .img-fluid {
+    width: 310px;
+    height: 120px; }
   body main div .img__principal {
     display: none; }
+  body main div .tituloCentrico {
+    font-size: 32px; }
+  body main div .parrafo {
+    font-size: 23px; }
   body main .cards {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column; }
-  body .footer {
-    font-family: sans-serif;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: right;
-    padding: 3px; } }
-
-/*media queries en mobile*/
-@media screen and (max-width: 500px) {
-  body div .img__principal {
-    display: none; }
-  body .cards {
     margin-top: 50px;
     display: flex;
     flex-direction: column; }
@@ -417,83 +430,127 @@ main .founder {
       height: 200px;
       width: 400px; }
   /*collaborative projects*/
-  body {
-    /*about us*/ }
-    body main .ceramic .ceramic__list {
-      font-size: 20px;
-      text-align: left; }
-    body main .ceramic .ceramic__p {
-      font-size: 20px;
-      margin: 0;
-      width: 0 auto; }
-    body main .ceramic .ceramic__img {
-      justify-content: center; }
-      body main .ceramic .ceramic__img .img__ce_uno {
-        display: none; }
-      body main .ceramic .ceramic__img .img__ce_dos {
-        height: 300px;
-        width: 300px; }
-    body main .grinder .grinder__list {
-      font-size: 20px;
-      text-align: left; }
-    body main .grinder .grinder__p {
-      font-size: 20px;
-      margin: 0;
-      width: 0 auto; }
-    body main .grinder .grinder__img {
-      justify-content: center; }
-      body main .grinder .grinder__img .img__g_dos {
-        display: none; }
-      body main .grinder .grinder__img .img__g_uno {
-        height: 300px;
-        width: 300px; }
-    body main .jewlry .jewlry__list {
-      font-size: 20px;
-      text-align: left; }
-    body main .jewlry .jewlry__p {
-      font-size: 20px;
-      margin: 0;
-      width: 0 auto; }
-    body main .jewlry .jewlry__img .img__je_uno {
+  body main .ceramic .ceramic__list {
+    font-size: 20px;
+    text-align: left; }
+  body main .ceramic .ceramic__p {
+    font-size: 20px;
+    margin: 0;
+    width: 0 auto; }
+  body main .ceramic .ceramic__img {
+    justify-content: center; }
+    body main .ceramic .ceramic__img .img__ce_uno {
       display: none; }
-    body main .jewlry .jewlry__img .img__je_dos {
+    body main .ceramic .ceramic__img .img__ce_dos {
       height: 300px;
       width: 300px; }
-    body body main .about__img .about__dos {
+  body main .grinder .grinder__list {
+    font-size: 20px;
+    text-align: left; }
+  body main .grinder .grinder__p {
+    font-size: 20px;
+    margin: 0;
+    width: 0 auto; }
+  body main .grinder .grinder__img {
+    justify-content: center; }
+    body main .grinder .grinder__img .img__g_dos {
       display: none; }
-    body body main .about__img .about__tres {
-      display: none; }
-    body body main .principal .principal__titulo {
+    body main .grinder .grinder__img .img__g_uno {
+      height: 300px;
+      width: 300px; }
+  body main .jewlry .jewlry__list {
+    font-size: 20px;
+    text-align: left; }
+  body main .jewlry .jewlry__p {
+    font-size: 20px;
+    margin: 0;
+    width: 0 auto; }
+  body main .jewlry .jewlry__img .img__je_uno {
+    display: none; }
+  body main .jewlry .jewlry__img .img__je_dos {
+    height: 300px;
+    width: 300px; }
+  /*about us*/
+  body main .about__img .about__dos {
+    width: 320px;
+    height: 300px; }
+  body main .about__img .about__tres {
+    display: none; }
+  body main .about__img .about__uno {
+    display: none; }
+  body main .principal {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    justify-content: center; }
+    body main .principal .principal__titulo {
       font-size: 40px;
-      margin-bottom: 100px;
-      margin-top: 10px; }
-    body body main .principal .principal__p {
-      font-size: 25px;
-      width: 0 auto;
-      padding: 0;
-      margin: 0; }
-    body body main .founder {
-      display: grid;
-      grid-template-columns: 400px;
-      grid-template-rows: 1fr;
-      justify-content: center; } }
+      margin-top: 30px; }
+  body main .founder {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    justify-content: center; }
+    body main .founder .founder__img {
+      width: 320px;
+      height: 300px; } }
 
 @media screen and (min-width: 600px) and (max-width: 850px) {
-  body main div .img__principal {
-    width: 80%;
-    height: 80%; }
-  body main .cards {
-    column-gap: 20%; }
-  body .main {
-    display: block; }
-  body .grinder__img .img__g_dos {
+  body {
+    /*collaboratuve projects*/ }
+    body main div .img__principal {
+      width: 90%;
+      height: 80%; }
+    body main .cards {
+      column-gap: 20%;
+      grid-template-columns: 40% 40%; }
+    body .main {
+      display: block; }
+    body .grinder__img .img__g_dos {
+      display: none; }
+    body .ceramic__img .img__ce_uno {
+      display: none; }
+    body .jewlry__img .img__je_dos {
+      display: none; }
+  /*self projects*/
+  body section div .img__holder2 {
+    margin-left: 20px; }
+    body section div .img__holder2 img {
+      height: 200px;
+      width: 400px; }
+  body main .candle .candle__img .img__c_dos {
     display: none; }
-  body .ceramic__img .img__ce_uno {
+  body main .wavy .wavy__img .img__w_uno {
     display: none; }
-  body .jewlry__img .img__je_dos {
-    display: none; } }
+  /*about us*/
+  body main .about__img .about__tres {
+    display: none; }
+  body main .about__img .about__uno {
+    display: none; }
+  body main .principal {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    justify-content: center; }
+    body main .principal .principal__p {
+      width: 700px;
+      font-weight: 5px; }
+  body main .founder {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    justify-content: center; }
+    body main .founder .founder__p {
+      width: 700px;
+      font-weight: 5px; } }
 
-/*self projects*/
-body section div .img__holder2 img {
-  height: 300px;
-  width: 600px; }
+@media screen and (min-width: 860px) and (max-width: 1280px) {
+  body main .about__img .about__uno {
+    height: 320px;
+    width: 320px; }
+  body main .about__img .about__dos {
+    height: 320px;
+    width: 320px; }
+  body main .about__img .about__tres {
+    display: none; }
+  body main .principal {
+    grid-template-columns: auto; }
+  body main .founder {
+    grid-template-columns: auto; } }
